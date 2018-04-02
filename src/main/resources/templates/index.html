@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Packing</title>
+		<link rel="stylesheet" th:href="@{/bootstrap-4.0.0-beta.2-dist/css/bootstrap.min.css}" />
+		<link rel="stylesheet" th:href="@{/styles/main.css}" />
+	</head>
+	<body>
+	    <div class="wrapper">
+			<h1>Write items weights list</h1>
+			<form action="#" th:action="@{/}" th:method="post">
+				<div class="form-group row">
+					<label class="col-sm-3 col-form-label" for="input-list">Weights list example: 1,2,3</label>
+					<div class="col-sm-9">
+ 						<input id="input-list" class="form-control" type="text" name="weights" />
+ 					</div>
+				</div>
+				<div>
+					<input class="btn btn-primary" type="submit" value="Submit" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

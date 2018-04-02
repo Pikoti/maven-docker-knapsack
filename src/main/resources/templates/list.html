@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Packing</title>
+		<link rel="stylesheet" th:href="@{/bootstrap-4.0.0-beta.2-dist/css/bootstrap.min.css}" />
+		<link rel="stylesheet" th:href="@{/styles/main.css}" />
+	</head>
+	<body>
+		<h1>Weights submitted: </h1>
+		<div th:text=${weights}></div>
+		<h1>Repartition in boxes: </h1>
+		<div th:text=${packing}></div>
+	</body>
+</html>
